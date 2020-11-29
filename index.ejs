@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<title><%= title %></title>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header><h1>お菓子</h1></header>
+  <section class="container">
+    <!-- 送信先actionは./save。　　送信方法methodはPOSTに設定 -->
+    <form action="./save" method="POST">
+      <div><p>メニュー</p>
+        <label><input type="radio" name="menu" value="いちごモナカ">いちごモナカ</label>
+        <label><input type="radio" name="menu" value="抹茶モナカ">抹茶モナカ</label>
+        <label><input type="radio" name="menu" value="モンブラン">モンブラン</label>
+      </div>
+
+      <!-- 性別は女性から -->
+      <div><p>性別</p>
+        <label><input type="radio" name="sex" value="女性">女性</label>
+        <label><input type="radio" name="sex" value="男性">男性</label>
+        <label><input type="radio" name="sex" value="その他">その他</label>
+      </div>
+
+      <div><p>年齢</p>
+        <label><input type="radio" name="age" value="10代">10代</label>
+        <label><input type="radio" name="age" value="20代">20代</label>
+        <label><input type="radio" name="age" value="30代">30代</label>
+        <label><input type="radio" name="age" value="40代">40代</label>
+      </div>
+      <input type="submit" value="送信">
+    
+    </form>
+    <script src=app.js ></script>
+
+  </section>
+</body>
+</html>
